@@ -1,6 +1,7 @@
 headings = [ // {{{
     "REPL",
     "Python",
+    "Bisection",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -41,6 +42,20 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"Python_intro_2"),
     "",
-    hireAndFadeIn(0.5,"Python_intro_3")
+    hireAndFadeIn(0.5,"Python_intro_3"),
+    // }}}
+    "B_alg", // {{{
+    fadeOutAndFire(0.5,"Python_intro_lines","Python_intro_1","Python_intro_2","Python_intro_3"),
+    rotateNextHeading(),
+    "",
+    hireAndFadeIn(0.5,"B_alg_1"),
+    "",
+    hireAndFadeIn(0.5,"B_alg_2"),
+    "",
+    hireAndFadeIn(0.5,"B_alg_2a"),
+    "",
+    hireAndFadeIn(0.5,"B_alg_2b"),
+    "",
+    hireAndFadeIn(0.5,"B_alg_2c")
     // }}}
 ]} // }}}
