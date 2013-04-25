@@ -56,6 +56,75 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"B_alg_2b"),
     "",
-    hireAndFadeIn(0.5,"B_alg_2c")
+    hireAndFadeIn(0.5,"B_alg_2c"),
+    // }}}
+    "B_ex", // {{{
+    fadeOutAndFire(0.5,"B_alg_1","B_alg_2","B_alg_2a","B_alg_2b","B_alg_2c"),
+    hireAndFadeIn(0.5,"B_ex_axes"),
+    "",
+    hireAndFadeInUseActors(0.5,
+        "B_ex_dot_1","B_ex_tic_1",
+        "B_ex_a","B_ex_foa",
+        "B_ex_dot_6","B_ex_tic_6",
+        "B_ex_b","B_ex_fob"
+    ),
+    "",
+    hireAndFadeInUseActors(0.5,"B_ex_tic_5","B_ex_dot_5","B_ex_x","B_ex_fox"),
+    "",
+    parallel(
+        fadeOut(0.5,"B_ex_x"),
+        fadeOut(0.5,"B_ex_fox"),
+        smooth(1,"B_ex_b","x",-355),
+        smooth(1,"B_ex_fob","x",-355),
+        smooth(1,"B_ex_fob","y",58),
+        fadeOutAndFire(0.5,"B_ex_dot_6","B_ex_tic_6")
+    ),
+    "",
+    set("B_ex_x","x",-177.5),
+    set("B_ex_fox","x",-177.5),
+    set("B_ex_fox","y",387),
+    parallel(
+        fadeIn(0.5,"B_ex_x"),
+        fadeIn(0.5,"B_ex_fox"),
+        hireAndFadeInUseActors(0.5,"B_ex_tic_2","B_ex_dot_2")
+    ),
+    "",
+    parallel(
+        fadeOut(0.5,"B_ex_x"),
+        fadeOut(0.5,"B_ex_fox"),
+        smooth(1,"B_ex_a","x",177.5),
+        smooth(1,"B_ex_foa","x",177.5),
+        smooth(1,"B_ex_foa","y",80),
+        fadeOutAndFire(0.5,"B_ex_dot_1","B_ex_tic_1")
+    ),
+    "",
+    set("B_ex_x","x",-88.75),
+    set("B_ex_fox","x",-88.75),
+    set("B_ex_fox","y",288),
+    parallel(
+        fadeIn(0.5,"B_ex_x"),
+        fadeIn(0.5,"B_ex_fox"),
+        hireAndFadeInUseActors(0.5,"B_ex_tic_3","B_ex_dot_3")
+    ),
+    "",
+    parallel(
+        fadeOut(0.5,"B_ex_x"),
+        fadeOut(0.5,"B_ex_fox"),
+        smooth(1,"B_ex_a","x",266.26),
+        smooth(1,"B_ex_foa","x",266.26),
+        smooth(1,"B_ex_foa","y",-20),
+        fadeOutAndFire(0.5,"B_ex_dot_2","B_ex_tic_2")
+    ),
+    "",
+    set("B_ex_x","x",-44.375),
+    set("B_ex_fox","x",-44.375),
+    set("B_ex_fox","y",87),
+    parallel(
+        fadeIn(0.5,"B_ex_x"),
+        fadeIn(0.5,"B_ex_fox"),
+        hireAndFadeInUseActors(0.5,"B_ex_tic_4","B_ex_dot_4")
+    ),
+    "",
+    hireAndFadeIn(0.5,"B_ex_error")
     // }}}
 ]} // }}}
