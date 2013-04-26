@@ -2,6 +2,7 @@ headings = [ // {{{
     "REPL",
     "Python",
     "Bisection",
+    "Newton's Method",
 ] // }}}
 
 script = function(){ return [ // {{{
@@ -125,6 +126,107 @@ script = function(){ return [ // {{{
         hireAndFadeInUseActors(0.5,"B_ex_tic_4","B_ex_dot_4")
     ),
     "",
-    hireAndFadeIn(0.5,"B_ex_error")
+    hireAndFadeIn(0.5,"B_ex_error"),
+    // }}}
+    "B_pros_cons", // {{{
+    fadeOutAndFire(0.5,
+        "B_ex_a",
+        "B_ex_b",
+        "B_ex_x",
+        "B_ex_foa",
+        "B_ex_fob",
+        "B_ex_fox",
+        "B_ex_tic_3",
+        "B_ex_tic_4",
+        "B_ex_tic_5",
+        "B_ex_dot_3",
+        "B_ex_dot_4",
+        "B_ex_dot_5",
+        "B_ex_axes",
+        "B_ex_error"
+    ),
+    hireAndFadeInUseActors(0.5,
+        "B_pros",
+        "B_cons"
+    ),
+    "",
+    hireAndFadeIn(0.5,"B_pros_1"),
+    "",
+    hireAndFadeIn(0.5,"B_pros_2"),
+    "",
+    hireAndFadeIn(0.5,"B_cons_1"),
+    // }}}
+    "N_illustration", // {{{
+    fadeOutAndFire(0.5,
+        "B_pros",
+        "B_pros_1",
+        "B_pros_2",
+        "B_cons",
+        "B_cons_1"
+    ),
+    rotateNextHeading(),
+    hireAndFadeIn(0.5,"N_ill_graph"),
+    "",
+    hireAndFadeIn(0.5,"N_ill_x0"),
+    "",
+    hireUseActor("N_ill_dashed_x0_cover","standard_backdrop_top"),
+    hireUseActor("N_ill_dashed_x0","N_ill_dashed_x0_cover"),
+    hireUseActor("N_ill_fox0_dot","N_ill_dashed_x0_cover"),
+    linear(0.5,"N_ill_dashed_x0_cover","y",-225),
+    fire("N_ill_dashed_x0_cover"),
+    hireAndFadeIn(0.5,"N_ill_fox0"),
+    "",
+    hireAndFadeIn(0.5,"N_ill_fabled_root_of_yore"),
+    "",
+    hireUseActor("N_ill_tangent_upper_cover","standard_backdrop_top"),
+    hireUseActor("N_ill_tangent_lower_cover","N_ill_tangent_upper_cover"),
+    hireAndFadeInUseActor(0.5,"N_ill_tangent","N_ill_tangent_lower_cover"),
+    "",
+    parallel(
+        linear(0.5,"N_ill_tangent_lower_cover","x",-170),
+        linear(0.5,"N_ill_tangent_lower_cover","y",165),
+        sequence(
+            wait(0.25),
+            hireAndFadeIn(0.25,"N_ill_x1")
+        )
+    ),
+    fire("N_ill_tangent_lower_cover"),
+    "",
+    hireAndFadeInUseActors(0.5,"N_ill_df","N_ill_dx"),
+    "",
+    fadeOutAndFire(0.5,"N_ill_fabled_root_of_yore"),
+    hireAndFadeInUseActors(0.5,
+        "N_ill_eq_fprime",
+        "N_ill_eq_eq",
+        "N_ill_eq_frac",
+        "N_ill_eq_df",
+        "N_ill_eq_dx"
+    ),
+    "",
+    fadeOutAndFire(0.5,"N_ill_eq_df"),
+    hireAndFadeInUseActor(0.5,"N_ill_eq_f"),
+    "",
+    fadeOutAndFire(0.5,"N_ill_eq_dx"),
+    hireAndFadeInUseActors(0.5,"N_ill_eq_x0","N_ill_eq_minus","N_ill_eq_x1"),
+    "",
+    parallel(
+        smooth(0.5,"N_ill_eq_fprime","x",171.14),
+        smooth(0.5,"N_ill_eq_fprime","y",34.13),
+        smooth(0.5,"N_ill_eq_x0","x",-171.14),
+        smooth(0.5,"N_ill_eq_x0","y",-24.8),
+        smooth(0.5,"N_ill_eq_minus","x",-171.14),
+        smooth(0.5,"N_ill_eq_minus","y",-24.8),
+        smooth(0.5,"N_ill_eq_x1","x",-171.14),
+        smooth(0.5,"N_ill_eq_x1","y",-24.8)
+    ),
+    "",
+    parallel(
+        smooth(0.5,"N_ill_eq_eq","x",-60),
+        smooth(0.5,"N_ill_eq_x1","x",-60-171.14),
+        smooth(0.5,"N_ill_eq_minus","x",105-171.14),
+        smooth(0.5,"N_ill_eq_x0","x",100-171.14)
+    ),
+    "",
+    hireAndFadeIn(0.5,"N_ill_next"),
     // }}}
 ]} // }}}
