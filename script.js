@@ -262,7 +262,7 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"N_alg_error_condition"),
     // }}}
-    "N_problem", // {{{
+    "fb_illustration_slide", // {{{
     fadeOutAndFire(0.5,
         "N_alg_1",
         "N_alg_2",
@@ -270,6 +270,39 @@ script = function(){ return [ // {{{
         "N_alg_2b",
         "N_alg_error_condition"
     ),
+    "",
+    hireAndFadeIn(0.5,"fb_ill_graph"),
+    "",
+    hireAndFadeIn(0.5,"fb_ill_exact_root"),
+    "",
+    hireAndFadeIn(0.5,"fb_ill_computed_root"),
+    "",
+    hireAndFadeIn(0.5,"fb_ill_forwards_error"),
+    "",
+    hireAndFadeIn(0.5,"fb_ill_backwards_error"),
+    "",
+    // }}}
+    "fb_definition_slide", // {{{
+    fadeOutAndFire(0.5,
+        "fb_ill_graph",
+        "fb_ill_exact_root",
+        "fb_ill_computed_root",
+        "fb_ill_forwards_error",
+        "fb_ill_backwards_error"
+    ),
+    hireAndFadeIn(0.5,"fb_slide"),
+    "",
+    hireAndFadeIn(0.5,"fb_forward"),
+    "",
+    hireAndFadeIn(0.5,"fb_backward"),
+    "",
+    fadeOutAndFire(0.5,
+        "fb_slide",
+        "fb_forward",
+        "fb_backward"
+    ),
+    // }}}
+    "N_problem", // {{{
     parallel(
         hireAndFadeInUseActor(0.5,"N_problem_graph","standard_backdrop_top"),
         hireAndFadeIn(0.5,"N_ill_axes")
