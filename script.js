@@ -229,7 +229,8 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"N_ill_next"),
     // }}}
-    "N_problem", // {{{
+    // }}}
+    "N_alg_slide", // {{{
     fadeOutAndFire(0.5,
         "N_ill_dashed_x0",
         "N_ill_fox0_dot",
@@ -248,10 +249,29 @@ script = function(){ return [ // {{{
         "N_ill_eq_x0",
         "N_ill_eq_minus",
         "N_ill_eq_x1",
-        "N_ill_next"
+        "N_ill_next",
+        "N_ill_axes"
     ),
     "",
-    hireAndFadeInUseActor(0.5,"N_problem_graph","standard_backdrop_top"),
+    hireAndFadeIn(0.5,"N_alg_1"),
+    "",
+    hireAndFadeIn(0.5,"N_alg_2"),
+    "",
+    hireAndFadeIn(0.5,"N_alg_2a"),
+    "",
+    hireAndFadeIn(0.5,"N_alg_2b"),
+    // }}}
+    "N_problem", // {{{
+    fadeOutAndFire(0.5,
+        "N_alg_1",
+        "N_alg_2",
+        "N_alg_2a",
+        "N_alg_2b"
+    ),
+    parallel(
+        hireAndFadeInUseActor(0.5,"N_problem_graph","standard_backdrop_top"),
+        hireAndFadeIn(0.5,"N_ill_axes")
+    ),
     "",
     hireAndFadeIn(0.5,"N_problem_x0"),
     "",
@@ -372,5 +392,4 @@ script = function(){ return [ // {{{
     hireAndFadeIn(0.5,"N_cons_2"),
     "",
     hireAndFadeIn(0.5,"N_cons_3"),
-    // }}}
 ]} // }}}
