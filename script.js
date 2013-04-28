@@ -229,7 +229,6 @@ script = function(){ return [ // {{{
     "",
     hireAndFadeIn(0.5,"N_ill_next"),
     // }}}
-    // }}}
     "N_alg_slide", // {{{
     fadeOutAndFire(0.5,
         "N_ill_dashed_x0",
