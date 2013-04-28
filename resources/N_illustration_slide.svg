@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,7 +80,7 @@
      inkscape:window-height="1156"
      id="namedview26763"
      showgrid="false"
-     inkscape:zoom="2.6768073"
+     inkscape:zoom="0.66920183"
      inkscape:cx="306.52841"
      inkscape:cy="365.37257"
      inkscape:window-x="0"
@@ -184,9 +184,16 @@
        id="tspan5339-7"
        x="82.268433"
        y="269.55011" /></text>
-  <g
+  <path
+     style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="M 933.24572,393.24483 C 910.35071,330.58481 896.5204,232.97976 804.94036,232.97976 c -91.58004,0 -105.40958,41.10149 -157.85507,119.29505 C 594.6398,430.46837 452.46115,631.09717 313.82104,658.64166 145.12096,683.94667 100.48155,648.40823 100.48155,648.40823"
      id="N_ill_graph"
-     inkscape:label="#g8300">
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cszcc"
+     inkscape:label="#path5758" />
+  <g
+     id="N_ill_axes"
+     inkscape:label="#g12578">
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
@@ -225,12 +232,6 @@
          id="tspan4142"
          x="38.770393"
          y="573.00989">0</tspan></text>
-    <path
-       sodipodi:nodetypes="cszcc"
-       inkscape:connector-curvature="0"
-       id="path5758"
-       d="M 933.24572,393.24483 C 910.35071,330.58481 896.5204,232.97976 804.94036,232.97976 c -91.58004,0 -105.40958,41.10149 -157.85507,119.29505 C 594.6398,430.46837 452.46115,631.09717 313.82104,658.64166 145.12096,683.94667 100.48155,648.40823 100.48155,648.40823"
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"

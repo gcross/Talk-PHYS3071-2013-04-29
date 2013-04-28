@@ -165,7 +165,7 @@ script = function(){ return [ // {{{
         "B_cons_1"
     ),
     rotateNextHeading(),
-    hireAndFadeIn(0.5,"N_ill_graph"),
+    hireAndFadeInUseActors(0.5,"N_ill_axes","N_ill_graph"),
     "",
     hireAndFadeIn(0.5,"N_ill_x0"),
     "",
