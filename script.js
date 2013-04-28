@@ -6,7 +6,7 @@ headings = [ // {{{
 ] // }}}
 
 script = function(){ return [ // {{{
-    "REPL", // {{{
+    // REPL {{{
     hireUseActors("REPL_Read","REPL_Print","REPL_Evaluate","REPL_Loop"),
     set("REPL_Read","x",1000),
     set("REPL_Print","x",1000),
